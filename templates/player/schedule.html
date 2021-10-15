@@ -1,0 +1,435 @@
+{% extends 'player/base.html' %}
+
+{% load static %}
+
+{% block content %}
+              <!-- Place add start -->
+    <section class="pb-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="place_ad_body my-3">
+                        <div class="row">
+                            <div class="col-md-6 py-2 d-flex align-items-center">
+                                <div class="ad_left d-flex align-items-center">
+                                    <h5><a href="">Want to Remove Ads?</a></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 py-2 d-flex align-items-center">
+                                <div class="ad_right d-flex align-items-center">
+                                    <h5>Sign up to <a href="">Oliver Premium</a> and get no ads, research applications, discounts and more!</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Place add end -->
+      <div class="search_body">
+          <div class="search_box">
+              <form action="">
+               <div class="form-group">
+                   <input type="text" class="form-control search_control"  placeholder="Search here">
+                 </div>
+                 <div class="search">
+                  <button>Search</button>
+              </div>
+              </form>
+      
+           </div>
+                   <div class="close_search">
+                  <img src="{% static 'images/x-button.svg' %}" alt="">
+              </div>
+      </div>
+      
+       <!-- Menu part end -->
+
+    <!-- banner part start -->
+
+    <section>
+      <div class="scoreboard_banner" id="parallax">
+        <div class="scorecard_conatiner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="scoreboard_title">
+                    <h2>Schedule / <span>Schedule</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner part end -->
+
+    <!-- Score section start -->
+
+    <section class="py-5 score_section">
+        <div class="container">
+          <div class="row justify-content-center py-5">
+            <div class="col-md-6">
+              <div class="select_date">
+                <button>Prev</button>
+                <p>10/10/21</p>
+                <button>Next</button>
+              </div>
+            </div>
+          </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="schedule_table table-responsive" style="font-size: 13px;">
+                        <table class="table table-sm table table-bordered">
+                            <colgroup>
+                                <col style="width:auto;">
+                            </colgroup>
+    
+                            <thead style="background-color: rgb(233, 250, 252);">
+                                <tr>
+                                    <th scope="col"><span>DATE</span></th>
+                                    <th scope="col"><span>TYPE</span></th>
+                                    <th scope="col"><span>TIME</span></th>
+                                    <th scope="col" colspan="3"><span>GAME</span></th>
+                                    <th scope="col"><span>TV</span></th>
+                                    <th scope="col"><span>RADIO</span></th>
+                                    <th scope="col"><span>LOCATION</span></th>
+                                    <th scope="col"><span>ETC</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+            
+                                    <td title="DATE" class="bd_r data_top" rowspan="5">03.20(SAT)</td>
+                                    
+                                    <td title="TYPE" class="bd_r data_top" rowspan="5">EXHIBITION</td>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KT</td>
+                                    <td title="GAME"><span class="score_schedule">:</span></td>
+                                    <td title="GAME" class="loop_l">DOOSAN</td>
+                                    <td class="TV">SS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">JAMSIL</td>
+                                    <td class="ETC">POSTPONED</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KIWOOM</td>
+                                    <td title="GAME"><span class="score_schedule">:</span></td>
+                                    <td title="GAME" class="loop_l">LOTTE</td>
+                                    <td class="TV">KN-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">SAJIK</td>
+                                    <td class="ETC">POSTPONED</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KIA</td>
+                                    <td title="GAME"><span class="score_schedule">:</span></td>
+                                    <td title="GAME" class="loop_l">SAMSUNG</td>
+                                    <td class="TV">SPO-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">DAEGU</td>
+                                    <td class="ETC">POSTPONED</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">SSG</td>
+                                    <td title="GAME"><span class="score_schedule">:</span></td>
+                                    <td title="GAME" class="loop_l">NC</td>
+                                    <td class="TV">MS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">CHANGWON</td>
+                                    <td class="ETC">POSTPONED</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">LG</td>
+                                    <td title="GAME"><span class="score_schedule">:</span></td>
+                                    <td title="GAME" class="loop_l">HANWHA</td>
+                                    <td class="TV">SPO-2T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">DAEJEON</td>
+                                    <td class="ETC">POSTPONED</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td title="DATE" class="bd_r data_top" rowspan="5">03.21(SUN)</td>
+                                    
+                                    <td title="TYPE" class="bd_r data_top" rowspan="5">EXHIBITION</td>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KT</td>
+                                    <td title="GAME"><span class="score_schedule">4:2</span></td>
+                                    <td title="GAME" class="loop_l">DOOSAN</td>
+                                    <td class="TV">SS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">JAMSIL</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KIWOOM</td>
+                                    <td title="GAME"><span class="score_schedule">1:6</span></td>
+                                    <td title="GAME" class="loop_l">LOTTE</td>
+                                    <td class="TV">KN-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">SAJIK</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KIA</td>
+                                    <td title="GAME"><span class="score_schedule">7:10</span></td>
+                                    <td title="GAME" class="loop_l">SAMSUNG</td>
+                                    <td class="TV">SPO-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">DAEGU</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">SSG</td>
+                                    <td title="GAME"><span class="score_schedule">3:11</span></td>
+                                    <td title="GAME" class="loop_l">NC</td>
+                                    <td class="TV">MS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">CHANGWON</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">LG</td>
+                                    <td title="GAME"><span class="score_schedule">2:3</span></td>
+                                    <td title="GAME" class="loop_l">HANWHA</td>
+                                    <td class="TV">SPO-2T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">DAEJEON</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td title="DATE" class="bd_r data_top" rowspan="5">03.22(MON)</td>
+                                    
+                                    <td title="TYPE" class="bd_r data_top" rowspan="5">EXHIBITION</td>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">HANWHA</td>
+                                    <td title="GAME"><span class="score_schedule">12:5</span></td>
+                                    <td title="GAME" class="loop_l">DOOSAN</td>
+                                    <td class="TV">MS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">JAMSIL</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">SSG</td>
+                                    <td title="GAME"><span class="score_schedule">3:10</span></td>
+                                    <td title="GAME" class="loop_l">LOTTE</td>
+                                    <td class="TV">SS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">SAJIK</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KIA</td>
+                                    <td title="GAME"><span class="score_schedule">7:0</span></td>
+                                    <td title="GAME" class="loop_l">NC</td>
+                                    <td class="TV">SPO-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">CHANGWON</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">LG</td>
+                                    <td title="GAME"><span class="score_schedule">3:9</span></td>
+                                    <td title="GAME" class="loop_l">KT</td>
+                                    <td class="TV">SPO-2T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">SUWON</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">18:00</td>
+                                    <td title="GAME" class="loop_r">KIWOOM</td>
+                                    <td title="GAME"><span class="score_schedule">5:5</span></td>
+                                    <td title="GAME" class="loop_l">SAMSUNG</td>
+                                    <td class="TV">SS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">DAEGU</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td title="DATE" class="bd_r data_top" rowspan="5">03.23(TUE)</td>
+                                    
+                                    <td title="TYPE" class="bd_r data_top" rowspan="5">EXHIBITION</td>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">HANWHA</td>
+                                    <td title="GAME"><span class="score_schedule">4:3</span></td>
+                                    <td title="GAME" class="loop_l">DOOSAN</td>
+                                    <td class="TV">MS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">JAMSIL</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">SSG</td>
+                                    <td title="GAME"><span class="score_schedule">2:3</span></td>
+                                    <td title="GAME" class="loop_l">LOTTE</td>
+                                    <td class="TV">SS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">SAJIK</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KIWOOM</td>
+                                    <td title="GAME"><span class="score_schedule">3:3</span></td>
+                                    <td title="GAME" class="loop_l">SAMSUNG</td>
+                                    <td class="TV">KN-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">DAEGU</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KIA</td>
+                                    <td title="GAME"><span class="score_schedule">11:1</span></td>
+                                    <td title="GAME" class="loop_l">NC</td>
+                                    <td class="TV">SPO-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">CHANGWON</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">LG</td>
+                                    <td title="GAME"><span class="score_schedule">4:4</span></td>
+                                    <td title="GAME" class="loop_l">KT</td>
+                                    <td class="TV">SPO-2T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">SUWON</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td title="DATE" class="bd_r data_top" rowspan="5">03.25(THU)</td>
+                                    
+                                    <td title="TYPE" class="bd_r data_top" rowspan="5">EXHIBITION</td>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">LG</td>
+                                    <td title="GAME"><span class="score_schedule">6:3</span></td>
+                                    <td title="GAME" class="loop_l">DOOSAN</td>
+                                    <td class="TV">SPO-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">JAMSIL</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">SAMSUNG</td>
+                                    <td title="GAME"><span class="score_schedule">6:3</span></td>
+                                    <td title="GAME" class="loop_l">SSG</td>
+                                    <td class="TV">KN-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">MUNHAK</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">KIWOOM</td>
+                                    <td title="GAME"><span class="score_schedule">9:4</span></td>
+                                    <td title="GAME" class="loop_l">NC</td>
+                                    <td class="TV">MS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">CHANGWON</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">HANWHA</td>
+                                    <td title="GAME"><span class="score_schedule">5:12</span></td>
+                                    <td title="GAME" class="loop_l">KT</td>
+                                    <td class="TV">SPO-2T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">SUWON</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td class="TIME">13:00</td>
+                                    <td title="GAME" class="loop_r">LOTTE</td>
+                                    <td title="GAME"><span class="score_schedule">3:1</span></td>
+                                    <td title="GAME" class="loop_l">KIA</td>
+                                    <td class="TV">SS-T<br></td>
+                                    <td class="RADIO"></td>
+                                    <td class="LOCATION">GWANGJU</td>
+                                    <td class="ETC">-</td>
+                                </tr>
+                                
+                               
+
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Score section end -->
+
+{% endblock %}

@@ -1,0 +1,134 @@
+@media (min-width: 992px) {
+  #mynav ul li .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 30px;
+  }
+  #mynav ul li:hover .dropdown-menu {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #mynav ul li {
+    text-align: center;
+    margin-right: 0px !important;
+  }
+  .summary_table_body {
+    overflow-x: scroll;
+  }
+  .player_social ul li a {
+    display: inline-block;
+    height: 35px;
+    line-height: 36px;
+    width: 35px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    background-color: #0e76a8;
+    -webkit-box-shadow: 0px 10px 30px #2b56f524;
+    -moz-box-shadow: 0px 10px 30px #2b56f524;
+    box-shadow: 0px 10px 30px #2b56f524;
+  }
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    font-size: 11px !important;
+  }
+
+  .table th {
+    font-size: 10px !important;
+  }
+  .pitching_table {
+    padding: 0px !important;
+    background-color: #fff;
+  }
+  .player_img {
+    height: 286px;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px;
+  }
+  /* .player_bio{
+    overflow-x: scroll;
+  } */
+  .player_bio_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1px 0;
+    flex-direction: column;
+  }
+  .bio_left_column {
+    width: 100%;
+}
+.bio_right_column {
+  width: 100%;
+}
+  .bio_left_column.long  .bio_left_head{
+    /* width: 35.3%; */
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .bio_left_column.long .bio_left_val {
+    /* width: 83.7%; */
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+}
+  .bio_left_head {
+    /* width: 30%; */
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    background-color: rgb(216, 213, 213);
+    padding: 2px 6px;
+}
+  .bio_left_val {
+    /* width: 70%; */
+    width: 100%;
+    padding: 2px 6px;
+    background-color: rgb(240, 238, 238);
+    height: 32px;
+    line-height: 32px;
+}
+.team_banner.player_banner .banner_heading h2 {
+  font-size: 14px !important;
+  font-weight: 900 !important;
+}
+
+/* .bio_left_head {
+  height: 100%;
+  line-height: 37px;
+} */
+/* .bio_left_val {
+ height: 100%;
+
+} */
+.bio_left_head p {
+  font-size: 10px;
+}
+.bio_left_val p {
+  font-size: 10px;
+}
+.player_info_sticky {
+  top: 66px;
+
+}
+.player_name_h2{
+ font-size:14px !important;"
+
+}
+}
+
+.player_name_h2{
+ font-size:28px !important;
+}

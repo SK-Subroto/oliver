@@ -1,0 +1,656 @@
+{% extends 'player/base.html' %}
+
+{% load static %}
+
+{% block content %}
+          <!-- Place add start -->
+    <section class="pb-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="place_ad_body my-3">
+                        <div class="row">
+                            <div class="col-md-6 py-2 d-flex align-items-center">
+                                <div class="ad_left d-flex align-items-center">
+                                    <h5><a href="">Want to Remove Ads?</a></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 py-2 d-flex align-items-center">
+                                <div class="ad_right d-flex align-items-center">
+                                    <h5>Sign up to <a href="">Oliver Premium</a> and get no ads, research applications, discounts and more!</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Place add end -->
+  <div class="search_body">
+      <div class="search_box">
+          <form action="">
+           <div class="form-group">
+               <input type="text" class="form-control search_control"  placeholder="Search here">
+             </div>
+             <div class="search">
+              <button>Search</button>
+          </div>
+          </form>
+  
+       </div>
+               <div class="close_search">
+              <img src="{% static 'images/x-button.svg' %}" alt="">
+          </div>
+  </div>
+  
+   <!-- Menu part end -->
+
+<section>
+    <div class="team_banner" style="background: url('{% static 'images/baseball-title.jpg' %}');">
+        <div class="team_banner_content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="banner_heading">
+                            <h2>2020 Tampa Bay Rays Statistics</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!-- Seasons info part start -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="season_body">
+                    <div class="season py-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                               <div class="season_year">
+                                <h4>2019 <span>Season</span></h4>
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                                <form action="">
+                                    <div class="form-group ">
+                                        <select id="" class="form-control custom_control">
+                                          <option selected>Select Season</option>
+                                          <option>2018</option>
+                                        </select>
+                                      </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 py-2">
+                            <div class="custom_card">
+                                <div class="card_heading">
+                                    <p>Record</p>
+                                </div>
+                                <div class="record">
+                                    <h5>40-20</h5>
+                                    <p><span>1st place in</span> <a href="">AL_East (Schedule and Results)</a></p>
+                                </div>
+
+                            </div>
+                            <!-- <div class="record">
+                                <h4>Record</h4>
+                                <h5>40-20</h5>
+                                <p><span>1st place in</span> <a href="">AL_East (Schedule and Results)</a></p>
+                            </div> -->
+                        </div>
+                        <div class="col-md-6 py-2">
+                            <div class="custom_card">
+                                <div class="card_heading">
+                                    <p>LATEST RESULTS</p>
+                                </div>
+                                <div class="latest_result">
+                                    <h5>Lost</h5>
+                                    <p><a href="">Worl Series <span>(4-2)</span></a> to <span><a href="">Los Angeles Dodgers</a></span></p>
+                                </div>
+                            </div>
+                            <!-- <div class="record">
+                                <h4>Record</h4>
+                                <h5>40-20</h5>
+                                <p><span>1st place in</span> <a href="">AL_East (Schedule and Results)</a></p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="post_season py-3">
+                        <h4>Post Season</h4>
+                        <div class="post_season_info">
+                            <table class="table team_table  table-hover">
+                                <thead style="background: #282728;">
+                                  <tr align="left" style="color: #fff;">
+                                    <th scope="col">Club</th>
+                                    <th scope="col" style="text-align: center;">Result</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-bordered">
+                                  <tr>
+                                    <td>
+                                        <div class="team_parent">
+                                            <div class="team_img">
+                                                <img src="{% static 'images/TBR-2020.png' %}" alt="">
+                                            </div>
+                                            <div class="team_name">
+                                                <a href="">Tampa Bay Rays</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="text-align: center;">
+                                    
+                                        <ul class="result_status">
+                                            <li><a href="" data-toggle="tooltip" data-placement="top" title=" AL Championship Series (4-3) over Houston Astros">W</a></li>
+                                            <li><a href="" data-toggle="tooltip" data-placement="top" title=" AL Championship Series (4-3) over Houston Astros">W</a></li>
+                                            <li><a href="" class="lost" data-toggle="tooltip" data-placement="top" title=" World Series (4-2) to Los Angeles Dodgers">L</a></li>
+                                            <li><a href="" data-toggle="tooltip" data-placement="top" title=" AL Championship Series (4-3) over Houston Astros">W</a></li>
+                                        </ul>
+                                    
+                                    </td>
+                                  </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- <div class="team_manage_info">
+                        <h4>Manager : <span><a href="">Kevin Cash </a> 40-20</span></h4>
+                        <h4>General Manager : <span><a href=""> </a> Erik Neander (Senior VP, Baseball Ops & GM)</span></h4>
+                        <h4>Farm Director : <span><a href=""></a> Jeff McLerran</span></h4>
+                        <h4>Scouting Director : <span><a href=""></a> Rob Metzler</span></h4>
+                        <h4>Ballpark : <span><a href=""></a> Tropicana Field</span></h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sticky part start -->
+<section class="" id="all_tab">
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light all_tabs_logo">
+        <a class="navbar-brand" href="#">Tampa Bay Rays Franchise Pages</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto all_tab_menu">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Schedule and results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Uniform</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contracts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</div>
+</section>
+<!-- Seasons info part end -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 py-2">
+               <div class="manage_info_body">
+                <div class="row">
+                    <div class="col-md-12 py-2">
+                        <div class="manage_name">
+                            <h4>Kevin Cash</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-5 py-2">
+                        <div class="manage_img">
+                            <img src="{% static 'images/coach-1.jpg' %}" alt="" class="img-fluid img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-7 py-2">
+                        <div class="manage_information">
+                          <div class="manege_info_title">
+                            <h5>Manager</h5>
+                          </div>
+
+                            <div class="row py-2">
+                                <div class="col-md-5">
+                                    <div class="bio_left">
+                                        <p>Age :</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 pr-0">
+                                    <div class="bio_right">
+                                        <p>40</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row py-2">
+                                <div class="col-md-5">
+                                    <div class="bio_left">
+                                        <p>College :</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 pr-0">
+                                    <div class="bio_right">
+                                        <p>Southeastern Louisiana</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-md-5">
+                                    <div class="bio_left">
+                                        <p>EXPERIENCE :</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 pr-0">
+                                    <div class="bio_right">
+                                        <p>15</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-md-5">
+                                    <div class="bio_left">
+                                        <p>NATIONALITY :</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 pr-0">
+                                    <div class="bio_right">
+                                        <p>	
+                                            Australia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="col-md-6 py-2">
+                <div class="manage_info_body">
+                 <div class="row">
+                     <div class="col-md-12 py-2">
+                         <div class="manage_name">
+                             <h4>Erik Neander</h4>
+                         </div>
+                     </div>
+                     <div class="col-md-5 py-2">
+                         <div class="manage_img">
+                             <img src="{% static 'images/coach-2.jpg' %}" alt="" class="img-fluid img-responsive">
+                         </div>
+                     </div>
+                     <div class="col-md-7 py-2">
+                         <div class="manage_information">
+                           <div class="manege_info_title">
+                             <h5>General Manage</h5>
+                           </div>
+ 
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>Age :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>40</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>College :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>Southeastern Louisiana</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>EXPERIENCE :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>15</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>NATIONALITY :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>	
+                                             Australia</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                </div>
+             </div>
+             <div class="col-md-6 py-2">
+                <div class="manage_info_body">
+                 <div class="row">
+                     <div class="col-md-12 py-2">
+                         <div class="manage_name">
+                             <h4>Jeff McLerran</h4>
+                         </div>
+                     </div>
+                     <div class="col-md-5 py-2">
+                         <div class="manage_img">
+                             <img src="{% static 'images/coach-3.jpg' %}" alt="" class="img-fluid img-responsive">
+                         </div>
+                     </div>
+                     <div class="col-md-7 py-2">
+                         <div class="manage_information">
+                           <div class="manege_info_title">
+                             <h5>Farm Director</h5>
+                           </div>
+ 
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>Age :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>40</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>College :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>Southeastern Louisiana</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>EXPERIENCE :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>15</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>NATIONALITY :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>	
+                                             Australia</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                </div>
+             </div>
+             <div class="col-md-6 py-2">
+                <div class="manage_info_body">
+                 <div class="row">
+                     <div class="col-md-12 py-2">
+                         <div class="manage_name">
+                             <h4>Rob Metzler</h4>
+                         </div>
+                     </div>
+                     <div class="col-md-5 py-2">
+                         <div class="manage_img">
+                             <img src="{% static 'images/coach-4.jpg' %}" alt="" class="img-fluid img-responsive">
+                         </div>
+                     </div>
+                     <div class="col-md-7 py-2">
+                         <div class="manage_information">
+                           <div class="manege_info_title">
+                             <h5>Scouting Director</h5>
+                           </div>
+ 
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>Age :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>40</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>College :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>Southeastern Louisiana</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>EXPERIENCE :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>15</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row py-2">
+                                 <div class="col-md-5">
+                                     <div class="bio_left">
+                                         <p>NATIONALITY :</p>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-7 pr-0">
+                                     <div class="bio_right">
+                                         <p>	
+                                             Australia</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</section>
+<!-- Team pitching part start -->
+
+<section class="py-5">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="pitching">
+                    <h4>Team Pitching 
+                    </h4>
+                </div>
+              <div class="pitching_table">
+                <table id="pitching" class=" table table-bordered dt-responsive table-responsive nowrap display"  width="100%" style="font-size: 11px !important;">
+                    <thead >
+                        <tr style="color: brown !important;">
+                            <th scope="col">Rk</th>
+                            <th scope="col">Pos</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">W</th>
+                            <th scope="col">L</th>
+                            <th scope="col">W-L%</th>
+                            <th scope="col">ERA</th>
+                            <th scope="col">G</th>
+                            <th scope="col">GS</th>
+                            <th scope="col">GF</th>
+                            <th scope="col">CG</th>
+                            <th scope="col">SHO</th>
+                            <th scope="col">SV</th>
+                            <th scope="col">IP</th>
+                            <th scope="col">H</th>
+                            <th scope="col">R</th>
+                            <th scope="col">ER</th>
+                            <th scope="col">HR</th>
+                            <th scope="col">BB</th>
+                            <th scope="col">IBB</th>
+                            <th scope="col">SO</th>
+                            <th scope="col">HBP</th>
+                            <th scope="col">BK</th>
+                            <th scope="col">WP</th>
+                            <th scope="col">BF</th>
+                            <th scope="col">ERA+</th>
+                            <th scope="col">FIP</th>
+                            <th scope="col">WHIP</th>
+                            <th scope="col">H9</th>
+                            <th scope="col">HR9</th>
+                            <th scope="col">BB9</th>
+                            <th scope="col">SO9</th>
+                            <th scope="col">SO/W</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>C</td>
+                            <td>Michael Perez*</td>
+                            <td>27</td>
+                            <td>38</td>
+                            <td>93</td>
+                            <td>84</td>
+                            <td>7</td>
+                            <td>14</td>
+                            <td>03</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>7</td>
+                            <td>61</td>
+                            <td>27</td>
+                            <td>.167</td>
+                            <td>.237</td>
+                            <td>.238</td>
+                            <td>.238</td>
+                            <td>34</td>
+                            <td>20</td>
+                            <td>03</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>20</td>
+                            <td>03</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>C</td>
+                            <td>Michael Perez*</td>
+                            <td>27</td>
+                            <td>38</td>
+                            <td>93</td>
+                            <td>84</td>
+                            <td>7</td>
+                            <td>14</td>
+                            <td>03</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>7</td>
+                            <td>61</td>
+                            <td>27</td>
+                            <td>.167</td>
+                            <td>.237</td>
+                            <td>.238</td>
+                            <td>.238</td>
+                            <td>34</td>
+                            <td>20</td>
+                            <td>03</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>20</td>
+                            <td>03</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+              </div>
+            
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team pitching part end -->
+
+ 
+{% endblock %}

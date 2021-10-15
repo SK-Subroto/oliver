@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver</title>
+    <!-- <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css"> -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+    <!-- Menu part start -->
+    <header class="cutom_nav" id="navbar">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light px-0 menu_nav">
+            <a class="navbar-brand" href="index.html"><img src="{% static 'images/oliver/Flash Stats- Oliver-03.jpg' %}" alt="" class="img-responsive"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="scoreboard.html">Scoreboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'player' %}">Player Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="standing.html">Team Standing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link srch_btn" href="javscript:void(0)">Search
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+      </div>
+
+    </header>
+
+    {# block content start #}
+    {% block content %}
+
+    {% endblock %}
+    {# block content end #}
+
+    <!-- Testimonial part start -->
+    <section class="testimonial_section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 py-5">
+                    <div class="all_heading">
+                        <h2>Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial_body">
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="slider_body">
+                            <div class="row testimonial_slider">
+                                <div class="col-md-12 py-2">
+                                    <div class="testimonila_img">
+                                        <img src="{% static 'images/coach-1.jpg' %}" alt="">
+                                    </div>
+                                    <div class="testimonila_name">
+                                        <h4>David Miller</h4>
+                                    </div>
+                                    <div class="testimonial_description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore magnam esse corporis assumenda minus explicabo, blanditiis vitae culpa excepturi quo animi, eius asperiores officia. Ad obcaecati animi culpa officia.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 py-2">
+                                    <div class="testimonila_img">
+                                        <img src="{% static 'images/coach-2.jpg' %}" alt="">
+                                    </div>
+                                    <div class="testimonila_name">
+                                        <h4>David Warner</h4>
+                                    </div>
+                                    <div class="testimonial_description">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore magnam esse corporis assumenda minus explicabo, blanditiis vitae culpa excepturi quo animi, eius asperiores officia. Ad obcaecati animi culpa officia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial part end -->
+
+    <!-- Sponsor Part Start -->
+    <section class="sponsor_section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 py-5">
+                    <div class="all_heading">
+                        <h2>Our Partners</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center sponsor_slider ">
+                <div class="col-md-12 py-2">
+                    <div class="sponsor_img">
+                        <img src="{% static 'images/bbfc-logo-col.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 py-2">
+                    <div class="sponsor_img">
+                        <img src="{% static 'images/bindle-square-red-transparent.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 py-2">
+                    <div class="sponsor_img">
+                        <img src="{% static 'images/colwiz_logo_256.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 py-2">
+                    <div class="sponsor_img">
+                        <img src="{% static 'images/Cue7e_7q.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 py-2">
+                    <div class="sponsor_img">
+                        <img src="{% static 'images/bbfc-logo-col.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 py-2">
+                    <div class="sponsor_img">
+                        <img src="{% static 'images/bindle-square-red-transparent.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 py-2">
+                    <div class="sponsor_img">
+                        <img src="{% static 'images/colwiz_logo_256.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 py-2">
+                    <div class="sponsor_img">
+                        <img src="{% static 'images/Cue7e_7q.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sponsor Part End -->
+
+    <a id="button"><i class="fas fa-arrow-up"></i></a>
+    <footer class="foteer_section_two pt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 py-2">
+                    <div class="footer_contact_body">
+                        <h4>Contact Us</h4>
+                        <div class="footer_contact row">
+                            <div class="footer_con_icn p-2 col-md-1">
+                                <p><i class="fas fa-phone-alt"></i></p>
+                            </div>
+                            <div class="foot_con_des p-2 col-md-11">
+                                <p>01654867878</p>
+                            </div>
+                        </div>
+                        <div class="footer_contact row">
+                            <div class="footer_con_icn p-2 col-md-1">
+                                <p><i class="fas fa-envelope"></i></p>
+                            </div>
+                            <div class="foot_con_des p-2 col-md-11">
+                                <p>test@test.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 py-2">
+                    <div class="footer_contact_body">
+                        <h4>MLB.com Legal Notices</h4>
+                        <div class="mlb_legal_notice">
+                            <p>The following are trademarks or service marks of Major League Baseball entities and may be used only with permission of Major League Baseball Properties, Inc. or the relevant Major League Baseball entity: Major League, Major League Baseball, MLB, the silhouetted batter logo, World Series, National League, American League, Division Series, League Championship Series, All-Star Game, and the names, nicknames, logos, uniform designs, color combinations, and slogans designating the Major League Baseball clubs and entities, and their respective mascots, events and exhibitions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-2">
+                    <div class="footer_contact_body">
+                        <h4>Follow Us</h4>
+                        <div class="footer_social_two">
+                            <ul>
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end -->
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/slick.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/all.min.js' %}"></script>
+    <script src="{% static 'js/script2.js' %}"></script>
+
+{#    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>#}
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <script>
+        let availablePlayer = [];
+        function fetchData() {
+            return fetch('{% static 'players.JSON' %}')
+                .then(res => res.json())
+                .then(data => {
+                    {#console.log(data)#}
+                    return data
+                })
+
+        }
+
+
+  $( function() {
+      const availablePlayer = [];
+     fetchData().then(res => {
+         for (r of res){
+             availablePlayer.push(r)
+         }
+     })
+      {#console.log(availablePlayer)#}
+
+    $( "#player" ).autocomplete({
+      source: availablePlayer,
+      select: function (event, ui) {
+             {#add_new_item(ui.item.label,ui.item.price,ui.item.code,ui.item.image,)#}
+          console.log(ui.item.id)
+             $("#player_id").val(ui.item.id);
+          {#set_input(ui.item.label)#}
+          {#return;#}
+             {#$('#customer_address').val(ui.item.add);#}
+
+         }
+    });
+  } );
+
+  </script>
+
+</body>
+</html>
