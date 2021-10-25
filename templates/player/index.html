@@ -87,12 +87,12 @@
                                 <p>Search Player</p>
                             </div>
     
-                            <form action="{% url 'player' %}" method="post">
+                            <form action="{% url 'player' %}" method="get">
 
                                 <div class="row">
                                     <div class="col-md-8 py-2">
                                         <div class="form-group ui-widget">
-                                       {% csrf_token %}
+{#                                       {% csrf_token %}#}
                                       <input type="text" id="player" name="player" class="form-control find_control" placeholder="Search Player">
                                             <input type="text" id="player_id" name="player_id" hidden>
                                           </div>
@@ -435,5 +435,47 @@
 </section>
 <!-- Sign up section end -->
 
+     {% include "player/jsLibrary.html" %}
+
+{#    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>#}
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <script>
+        let availablePlayer = [];
+        function fetchData() {
+            return fetch('{% static 'players.json' %}')
+                .then(res => res.json())
+                .then(data => {
+                    {#console.log(data)#}
+                    return data
+                })
+
+        }
+
+
+  $( function() {
+      const availablePlayer = [];
+     fetchData().then(res => {
+         for (r of res){
+             availablePlayer.push(r)
+         }
+     })
+      {#console.log(availablePlayer)#}
+
+    $( "#player" ).autocomplete({
+      source: availablePlayer,
+      select: function (event, ui) {
+             {#add_new_item(ui.item.label,ui.item.price,ui.item.code,ui.item.image,)#}
+          console.log(ui.item.id)
+             $("#player_id").val(ui.item.id);
+          {#set_input(ui.item.label)#}
+          {#return;#}
+             {#$('#customer_address').val(ui.item.add);#}
+
+         }
+    });
+  } );
+
+  </script>
 
 {% endblock %}

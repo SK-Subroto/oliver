@@ -4,10 +4,7 @@ from io import BytesIO
 from decouple import config
 
 from django.http import JsonResponse
-from django.shortcuts import render, HttpResponse
-
-# Create your views here.
-from django.views.generic import View, TemplateView
+from django.shortcuts import render, HttpResponse, redirect
 
 
 def home(request):
@@ -23,11 +20,13 @@ def schedule(request):
 
 
 def playerProfile(request):
-    if request.method == 'POST':
-        player_id = request.POST['player_id']
+    # GET or POST
+    if request.method == 'GET':
+        player_id = request.GET['player_id']
         print(player_id)
         context = {'player_id': player_id}
-    return render(request, 'player/player.html', context)
+        return render(request, 'player/player.html', context)
+    return redirect('home')
 
 
 def team(request):
@@ -36,6 +35,7 @@ def team(request):
 
 def teamStanding(request):
     return render(request, 'player/standing.html')
+
 
 def readFtp(request, id):
     ftp = FTP(config('FTP_URL'))
